@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html",
         "format": "prettier \"src/**/*.{js,html}\" --write",
         "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,11 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/preset-env": "^7.8.4",
+        "@babel/preset-react": "^7.8.3",
         "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.9.0",
         "eslint-plugin-import": "^2.20.0",
@@ -25,7 +30,9 @@
         "prettier": "^1.19.1"
     },
     "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
         "control.js": "0.0.1",
+        "parcel-plugin-clean-dist": "0.0.6",
         "react": "^16.12.0",
         "react-dom": "^16.12.0"
     }

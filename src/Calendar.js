@@ -3,7 +3,7 @@ import Decade from "./Decade";
 import Year from "./Year";
 import Month from "./Month";
 import Day from "./Day";
-import OuterClick from "./OuterClick";
+import OuterClick from "./OuterClick.jsx";
 
 class Calendar extends Component {
     constructor(props) {
